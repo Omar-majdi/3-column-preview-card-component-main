@@ -1,0 +1,167 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  /* (background, headings, buttons) */
+  --very-light-gray: hsl(0, 0%, 95%);
+  /* Pargraphes */
+  --ff-primary: 'Lexend Deca', sans-serif;
+  --ff-secondary: 'Big Shoulders Display', cursive;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+
+}
+
+html {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+h1 {
+  font-family: var(--ff-secondary);
+  font-weight: 700;
+  color: var(--very-light-gray);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+p {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  color: var(--transparent-white);
+  font-size: 1.2rem;
+}
+
+.container {
+  /* margin: auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  height: 100vh;
+  
+  /* grid-template-columns: repeat(3, minmax(400px, 1fr)); */
+  
+}
+
+@media (max-width: 796px) {
+  .container {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  article {
+    width: 100vh;
+  }
+}
+
+article {
+  width: 20rem;
+  height: 38rem;
+  padding: 3rem 3rem;
+  border-radius: 1%;
+  position: relative;
+}
+.article-1 {
+  background-color: var(--bright-orange);
+  
+
+}
+
+.article-2 {
+  background-color: var(--dark-cyan);
+  
+  
+}
+
+.article-3 {
+  background-color: var(--very-dark-cyan);
+  /*  */
+}
+
+.icon-1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+button {
+  width: 8rem;
+  position: absolute;
+  bottom: 50px;
+}
+/* CSS */
+.button-1 {
+  
+  height: 3rem;
+  align-items: center;
+  background-color: var(--very-light-gray);
+  color: var(--bright-orange);
+  border-radius: 24px;
+  justify-content: center;
+  letter-spacing: 0.25px;
+  text-align: center;
+  border: none;
+  /* margin-top: 9rem; */
+  position: absolute;
+  bottom: 50px;
+
+}
+
+.button-2 {
+  height: 3rem;
+  align-items: center;
+  background-color: var(--very-light-gray);
+  color: var(--dark-cyan);
+  border-radius: 24px;
+  justify-content: center;
+  letter-spacing: 0.25px;
+  text-align: center;
+  border: none;
+}
+
+.button-3 {
+  height: 3rem;
+  align-items: center;
+  background-color: var(--very-light-gray);
+  color: var(--very-dark-cyan);
+  border-radius: 24px;
+  justify-content: center;
+  letter-spacing: 0.25px;
+  text-align: center;
+  border: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 720px) {
+  .container {
+    /* flex-direction: column; */
+  }
+}
